@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-const logo = "/assets/images/logo.png";
+const logo = `${import.meta.env.BASE_URL}assets/images/logo.png`;
 
 const navItems = [
   { label: "Home", path: "/" },

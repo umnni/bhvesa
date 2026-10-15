@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhvesa</title>
+    <script>
+      const base = "/bhvesa";
+      const route = window.location.pathname.startsWith(base)
+        ? window.location.pathname.slice(base.length)
+        : window.location.pathname;
+      const destination = `${base}/?p=${encodeURIComponent(
+        route + window.location.search + window.location.hash
+      )}`;
+      window.location.replace(destination);
+    </script>
+  </head>
+  <body></body>
+</html>

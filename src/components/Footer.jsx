@@ -8,7 +8,7 @@ import {
   FaInstagram, FaFacebookF,
   FaLinkedinIn, FaYoutube
 } from "react-icons/fa";
-const logo = "/assets/images/logo.png";
+const logo = `${import.meta.env.BASE_URL}assets/images/logo.png`;
 
 const links = [
   { name: "Home", path: "/" },
